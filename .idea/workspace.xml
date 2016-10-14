@@ -29,8 +29,8 @@
       <file leaf-file-name="redux-example.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/redux-example.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="111" column="25" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
+            <state relative-caret-position="421">
+              <caret line="73" column="44" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -200,6 +200,7 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="C:\Users\Yen\Desktop\React_course\ReactTimer\node_modules\mocha" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Yen/Desktop/React_course/LearnRedux/app/redux-todo-example.jsx" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -282,12 +283,12 @@
       <workItem from="1476087940737" duration="5083000" />
       <workItem from="1476093553311" duration="2306000" />
       <workItem from="1476431640151" duration="82000" />
-      <workItem from="1476431823844" duration="10808000" />
+      <workItem from="1476431823844" duration="12574000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38347000" />
+    <option name="totallyTimeSpent" value="40113000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
@@ -499,8 +500,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/redux-example.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="111" column="25" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
+        <state relative-caret-position="421">
+          <caret line="73" column="44" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="44" />
           <folding />
         </state>
       </provider>
