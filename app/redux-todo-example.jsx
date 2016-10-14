@@ -7,7 +7,6 @@ var defaultState = {
 }
 
 var reducer = (state = defaultState, action) => {
-
     switch(action.type) {
         case 'CHANGE_SEARCH_TEXT':
             return {
