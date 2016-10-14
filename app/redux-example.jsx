@@ -28,6 +28,11 @@ var reducer = (state = stateDefault, action) => {
                     }
                 ]
             };
+        case 'REMOVE_HOBBY':
+            return {
+                ...state,
+                hobbies: state.hobbies.filter(hobby => hobby.id !== action.id)
+            }
         case 'ADD_MOVIE':
             return {
                 ...state,
@@ -38,6 +43,11 @@ var reducer = (state = stateDefault, action) => {
                         ...action.movie
                     }
                 ]
+            };
+        case 'REMOVE_MOVIE':
+            return {
+                ...state,
+                movies: state.movies.filter(movie => movie.id !== action.id)
             };
         default:
             return state;
@@ -74,6 +84,16 @@ store.dispatch({
 });
 
 store.dispatch({
+    type: 'ADD_HOBBY',
+    hobby: 'Walking'
+});
+
+store.dispatch({
+    type: 'REMOVE_HOBBY',
+    id: 2
+});
+
+store.dispatch({
     type: 'ADD_MOVIE',
     movie: {
         title: 'Pokemon',
@@ -89,7 +109,12 @@ store.dispatch({
 store.dispatch({
     type: 'ADD_MOVIE',
     movie: {
-        title: 'No title',
+        title: 'Star Wars',
         genre: 'Action'
     }
+});
+
+store.dispatch({
+    type: 'REMOVE_MOVIE',
+    id: 1
 });
