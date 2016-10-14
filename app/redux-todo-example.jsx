@@ -19,15 +19,30 @@ var reducer = (state = defaultState, action) => {
     }
 };
 
-var store = Redux.createStore(reducer);
+var store = Redux.createStore(reducer, Redux.compose(
+    window.devToolsExtension ? window.devToolsExtension() : f => f
+));
 
-console.log("Current State ", store.getState());
+// Subscribe to state change
+var unsubcribe = store.subscribe(() => {
+    var state = store.getState();
+
+    document.getElementById('app').innerHTML = state.searchText;
+});
 
 store.dispatch({
     type: 'CHANGE_SEARCH_TEXT',
     newSearchText: 'room'
 });
 
-console.log('Search Text should be "room"', store.getState());
+store.dispatch({
+    type: 'CHANGE_SEARCH_TEXT',
+    newSearchText: 'stupid'
+});
+
+store.dispatch({
+    type: 'CHANGE_SEARCH_TEXT',
+    newSearchText: 'Ronado'
+});
 
 
